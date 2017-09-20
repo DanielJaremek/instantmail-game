@@ -1,0 +1,64 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+#game img {
+    height: 100vh;
+    width: 100%;
+    margin: auto 0;
+    position: fixed;
+    opacity : 0.70;
+    filter : alpha(opacity=70);
+}
+
+.tape-top-left {
+     background-color: black;
+     height: 15px;
+     width: 35%;
+     top: 40%;
+     position: absolute;
+     border-top-right-radius: 20px;
+     border: 1px solid white;
+ }
+
+.tape-top-right  {
+    background-color: black;
+    height: 15px;
+    width: 35%;
+    top: 40%;
+    right: 0px;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border: 1px solid white;
+}
+
+.tape-bottom-left {
+    background-color: black;
+    height: 15px;
+    width: 25%;
+    top: 70%;
+    position: absolute;
+    border-top-right-radius: 20px;
+    border: 1px solid white;
+}
+
+.tape-bottom-right  {
+    background-color: black;
+    height: 15px;
+    width: 25%;
+    top: 70%;
+    right: 0px;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border: 1px solid white;
+}
+
+.boy {
+    width: 400px;
+    height: 700px;
+    background: url('boy.png');
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
