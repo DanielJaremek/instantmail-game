@@ -21,7 +21,7 @@ setTimeout(function () {
 
 setTimeout(function () {
     pack1.moveDown();
-}, 8000);
+}, 6000);
 
 var pack2 = new PackageBottomLeft();
 
@@ -48,5 +48,5 @@ setTimeout(function () {
 
 setTimeout(function () {
     pack3.moveDown();
-}, 5000);
+}, 3500);
 
