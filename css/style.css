@@ -62,3 +62,74 @@
     background-repeat: no-repeat;
 }
 
+.package {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0%;
+    bottom: 60%;
+    transition: all 8s linear;
+}
+
+.package.moveLeft {
+    right: 35%;
+}
+
+.package.moveDown {
+    bottom: 0%;
+}
+
+.package1 {
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0%;
+    bottom: 60%;
+    transition: all 8s linear;
+}
+
+.package1.moveRight {
+    left: 35%;
+}
+
+.package1.moveDown {
+    bottom: 0%;
+}
+
+.package2 {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0%;
+    bottom: 30%;
+    transition: all 5s linear;
+}
+
+.package2.moveLeft {
+    left: 25%;
+}
+
+.package2.moveDown {
+    bottom: 0%;
+}
+
+.package3 {
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0%;
+    bottom: 30%;
+    transition: all 5s linear;
+}
+
+.package3.moveLeft {
+    right: 25%;
+}
+
+.package3.moveDown {
+    bottom: 0%;
+}
