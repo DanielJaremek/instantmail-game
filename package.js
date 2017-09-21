@@ -8,14 +8,15 @@ function PackageTopRight() {
     }
 }
 
+
 PackageTopRight.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
     // @TODO: Losowanie obiektu
     var packages = ['highRight'];
-    // Losujemy liczbe z zakresu kluczy w tablicy obstacles
+    // Losujemy liczbe z zakresu kluczy w tablicy packages
     var random = Math.floor(Math.random() * packages.length);
 
-    $('#game').append('<div class="package" ' + packages[random] + '"></div>');
+    $('#game').append('<div class="package ' + packages[random] + '"></div>');
     this.handle = $('#game .package:last-child');
 };
 
@@ -23,7 +24,6 @@ PackageTopRight.prototype.init = function () {
 PackageTopRight.prototype.moveLeft = function () {
     // Wprawienie przeszkody w ruch
     // Dodac klase move na przeszkodzie
-
     this.handle.addClass('moveLeft');
 };
 PackageTopRight.prototype.moveDown = function () {
@@ -48,7 +48,7 @@ PackageTopLeft.prototype.init = function () {
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * packages1.length);
 
-    $('#game').append('<div class="package1" ' + packages1[random] + '"></div>');
+    $('#game').append('<div class="package1 ' + packages1[random] + '"></div>');
     this.handle = $('#game .package1:last-child');
 };
 
@@ -82,7 +82,7 @@ PackageBottomLeft.prototype.init = function () {
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * packages2.length);
 
-    $('#game').append('<div class="package2" ' + packages2[random] + '"></div>');
+    $('#game').append('<div class="package2 ' + packages2[random] + '"></div>');
     this.handle = $('#game .package2:last-child');
 };
 
@@ -115,7 +115,7 @@ PackageBottomRight.prototype.init = function () {
     // Losujemy liczbe z zakresu kluczy w tablicy obstacles
     var random = Math.floor(Math.random() * packages3.length);
 
-    $('#game').append('<div class="package3" ' + packages3[random] + '"></div>');
+    $('#game').append('<div class="package3 ' + packages3[random] + '"></div>');
     this.handle = $('#game .package3:last-child');
 };
 
