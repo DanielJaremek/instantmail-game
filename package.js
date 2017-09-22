@@ -1,3 +1,46 @@
+function Package() {
+    this.handle;
+    var _position = {
+        x1: 0,
+        y1: 0,
+        x2: 0,
+        y2: 0
+    }
+}
+
+Package.prototype.init = function() {
+    // Dodanie elementu DOM do przestrzeni gry
+    // @TODO: Losowanie obiektu
+    var packages = ['highRight', 'highLeft', 'bottomLeft', 'bottomRight'];
+
+    $.each(packages , function(i, val) {
+        $('#game').append('<div class="package' + i + '"></div>');
+        this.handle = $('#game .package' + i + ':last-child');
+    });
+};
+
+Package.prototype.moveLeft = function () {
+    // Wprawienie przeszkody w ruch
+    // Dodac klase move na przeszkodzie
+    this.handle.addClass('moveLeft');
+};
+Package.prototype.moveDown = function () {
+
+    this.handle.addClass('moveDown');
+};
+
+Package.prototype.moveRight = function () {
+    // Wprawienie przeszkody w ruch
+    // Dodac klase move na przeszkodzie
+
+    this.handle.addClass('moveRight');
+};
+Package.prototype.moveDown = function () {
+
+    this.handle.addClass('moveDown');
+};
+
+
 function PackageTopRight() {
     this.handle;
     var _position = {
@@ -8,14 +51,13 @@ function PackageTopRight() {
     }
 }
 
-
 PackageTopRight.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
     // @TODO: Losowanie obiektu
     var packages = ['highRight'];
     // Losujemy liczbe z zakresu kluczy w tablicy packages
     var random = Math.floor(Math.random() * packages.length);
-
+console.log(packages[random]);
     $('#game').append('<div class="package ' + packages[random] + '"></div>');
     this.handle = $('#game .package:last-child');
 };

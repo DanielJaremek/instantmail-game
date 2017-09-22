@@ -62,7 +62,7 @@
     background-repeat: no-repeat;
 }
 
-.package {
+.package0 {
     background-color: red;
     height: 30px;
     width: 30px;
@@ -72,11 +72,11 @@
     transition: all 8s linear;
 }
 
-.package.moveLeft {
+.package0.moveLeft {
     right: 35%;
 }
 
-.package.moveDown {
+.package0.moveDown {
     bottom: 0%;
 }
 
