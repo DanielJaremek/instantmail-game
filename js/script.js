@@ -5,21 +5,13 @@ $(document).ready(function () {
     boy = new Boy();
     console.log(boy);
     boy.init();
-
-
-    // Tworzymy co 500ms przeszkody
-    createObstacles(500, boy);
-
-    setTimeout(function () {
-        $('#game').addClass('hard');
-    }, 5000);
 });
 
-document.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', function (event) {
     if (event.code === 'ArrowDown') {
         boy.moveleft();
     }
-    if (event.code === 'ArrowUp') {
+    if (event.code === 'ArrowLeft') {
         boy.moveleft();
     }
 });
