@@ -1,6 +1,8 @@
-var pack = new PackageTopRight();
+
 
 setInterval(function (){
+
+    var pack = new PackageTopRight();
 
     pack.init();
 
@@ -50,8 +52,8 @@ setInterval(function (){
 
     setTimeout(function () {
         pack3.moveDown();
-    }, 3500);
+    }, 3000);
 
 
-}, 2300);
+}, 4300);
 
