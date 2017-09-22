@@ -14,6 +14,10 @@ setInterval(function (){
         pack.moveDown();
     }, 8000);
 
+}, 4300);
+
+setInterval(function (){
+
     var pack1 = new PackageTopLeft();
 
     pack1.init();
@@ -27,6 +31,11 @@ setInterval(function (){
         pack1.moveDown();
     }, 6000);
 
+}, 5300);
+
+    setInterval(function (){
+
+
     var pack2 = new PackageBottomLeft();
 
     pack2.init();
@@ -38,7 +47,11 @@ setInterval(function (){
 
     setTimeout(function () {
         pack2.moveDown();
-    }, 5000);
+    }, 6000);
+
+}, 8000);
+
+    setInterval(function (){
 
 
     var pack3 = new PackageBottomRight();
@@ -54,6 +67,6 @@ setInterval(function (){
         pack3.moveDown();
     }, 3000);
 
+    }, 3500);
 
-}, 4300);
 
