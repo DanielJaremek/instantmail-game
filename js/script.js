@@ -1,7 +1,8 @@
-var pack = new PackageTopRight();
+
 
 setInterval(function (){
 
+    var pack = new PackageTopRight();
     pack.init();
 
     setTimeout(function () {
@@ -53,5 +54,5 @@ setInterval(function (){
     }, 3500);
 
 
-}, 2300);
+}, 3300);
 
