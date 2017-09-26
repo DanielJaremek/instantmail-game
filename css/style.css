@@ -66,3 +66,7 @@
 #boy.moveleft {
     animation: moveleft 3s linear;
 }
+
+#boy.moveright {
+    animation: moveright 3s linear;
+}
