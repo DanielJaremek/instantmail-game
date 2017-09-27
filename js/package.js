@@ -1,22 +1,19 @@
 function PackageTopRight() {
     this.handle;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
 }
-
 
 PackageTopRight.prototype.init = function () {
     // Dodanie elementu DOM do przestrzeni gry
     // @TODO: Losowanie obiektu
     var packages = ['highRight'];
+    var colors = ['blue', 'red', 'yellow', 'white'];
     // Losujemy liczbe z zakresu kluczy w tablicy packages
     var random = Math.floor(Math.random() * packages.length);
+    var randomColor = Math.floor(Math.random() * colors.length);
 
-    $('#game').append('<div class="package ' + packages[random] + '"></div>');
+    var className = 'package ' + packages[random] + ' ' + colors[randomColor];
+
+    $('#game').append('<div class="' + className + '"></div>');
     this.handle = $('#game .package:last-child');
 };
 
@@ -33,12 +30,6 @@ PackageTopRight.prototype.moveDown = function () {
 
 function PackageTopLeft() {
     this.handle;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
 }
 
 PackageTopLeft.prototype.init = function () {
@@ -67,12 +58,6 @@ PackageTopLeft.prototype.moveDown = function () {
 
 function PackageBottomLeft() {
     this.handle;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
 }
 
 PackageBottomLeft.prototype.init = function () {
@@ -100,12 +85,6 @@ PackageBottomLeft.prototype.moveDown = function () {
 
 function PackageBottomRight() {
     this.handle;
-    var _position = {
-        x1: 0,
-        y1: 0,
-        x2: 0,
-        y2: 0
-    }
 }
 
 PackageBottomRight.prototype.init = function () {

@@ -71,7 +71,7 @@
     animation: moveright 3s linear;
 }
 .package {
-    background: red;
+    /* background: red; */
     height: 30px;
     width: 30px;
     position: absolute;
@@ -89,7 +89,7 @@
 }
 
 .package1 {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 40px;
     width: 30px;
     position: absolute;
@@ -107,7 +107,7 @@
 }
 
 .package2 {
-    background-color: white;
+    /* background-color: white; */
     height: 25px;
     width: 30px;
     position: absolute;
@@ -125,7 +125,7 @@
 }
 
 .package3 {
-    background-color: blue;
+    /* background-color: blue; */
     height: 50px;
     width: 25px;
     position: absolute;
@@ -140,5 +140,18 @@
 
 .package3.moveDown {
     bottom: 0%;
+}
+
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.white{
+    background-color: white;
 }
 
