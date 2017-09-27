@@ -25,14 +25,6 @@ function packagesInterval(){
         var pack = new PackageTopRight();
         pack.init();
     
-        setTimeout(function () {
-            pack.moveLeft();
-        }, 50);
-    
-        setTimeout(function () {
-            pack.moveDown();
-        }, 8000);
-    
         // var pack1 = new PackageTopLeft();
     
         // pack1.init();

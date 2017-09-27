@@ -116,7 +116,7 @@
     transition: all 5s linear;
 }
 
-.package2.moveLeft {
+.package2.moveLeft, .package2.moveRight {
     left: 25%;
 }
 
