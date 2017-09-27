@@ -1,6 +1,6 @@
 function Boy() {
     this.handle;
-    this.step = 5;
+    this.step = 8;
 }
 
 // Inicjalizacja naszego czlowieka
@@ -18,13 +18,13 @@ Boy.prototype.init = function () {
 Boy.prototype.moveleft = function () {
     var acctualPositionX = parseInt(this.handle.style.left.replace('%', ''));
     var newPosition = acctualPositionX - this.step;
-    if (newPosition > 0)
+    if (newPosition > 20)
         this.handle.style.left = newPosition + '%';
 };
 
 Boy.prototype.moveright = function () {
     var acctualPositionX = parseInt(this.handle.style.left.replace('%', ''));
     var newPosition = acctualPositionX + this.step;
-    if (newPosition < 100)
+    if (newPosition < 80)
     this.handle.style.left = newPosition + '%';
 };
