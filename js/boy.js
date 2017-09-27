@@ -16,13 +16,15 @@ Boy.prototype.init = function () {
 
 // Unikanie przeszkody (kucanie)
 Boy.prototype.moveleft = function () {
-
-        var acctualPositionX = this.handle.style.left.replace('%', '');
-        var newPosition = acctualPositionX - this.step;
-
+    var acctualPositionX = parseInt(this.handle.style.left.replace('%', ''));
+    var newPosition = acctualPositionX - this.step;
+    if (newPosition > 0)
         this.handle.style.left = newPosition + '%';
-
-        console.log(acctualPositionX);
-
 };
 
+Boy.prototype.moveright = function () {
+    var acctualPositionX = parseInt(this.handle.style.left.replace('%', ''));
+    var newPosition = acctualPositionX + this.step;
+    if (newPosition < 100)
+    this.handle.style.left = newPosition + '%';
+};

@@ -8,8 +8,8 @@ $(document).ready(function () {
 });
 
 window.addEventListener('keydown', function (event) {
-    if (event.code === 'ArrowDown') {
-        boy.moveleft();
+    if (event.code === 'ArrowRight') {
+        boy.moveright();
     }
     if (event.code === 'ArrowLeft') {
         boy.moveleft();
