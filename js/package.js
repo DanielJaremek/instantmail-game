@@ -41,11 +41,13 @@ Package.prototype.init = function () {
         self.moveDown();
     }, speed);
 
-    setTimeout(function(){
-        self.handle.remove();
+    setTimeout(function () {
+        self.remove();
     }, speed + 50 + 1000)
 
-    this.intervalId = setInterval(this.checkCollision, 100);    
+    this.intervalId = setInterval(function () {
+        self.checkCollision();
+    }, 100);
 };
 
 
@@ -61,6 +63,32 @@ Package.prototype.moveDown = function () {
     this.handle.addClass('moveDown');
 };
 
-Package.prototype.checkCollision = function () {
+Package.prototype.remove = function () {
+    this.handle.remove();
+    clearInterval(this.intervalId);
+};
 
+Package.prototype.checkCollision = function () {
+    var bottomPositionOfPackage = parseInt(
+        this.handle.css('bottom').replace('px', '')
+    );
+    var leftPositionOfPackage = parseInt(
+        this.handle.css('left').replace('px', '')
+    );
+    
+    var leftPositionOfBoy = $('#boy')[0].getBoundingClientRect().left;
+
+    var rightPositionOfBoy = 50 + leftPositionOfBoy;
+
+    console.log(bottomPositionOfPackage, leftPositionOfPackage, leftPositionOfBoy, rightPositionOfBoy,
+        bottomPositionOfPackage <= 120, leftPositionOfPackage >= leftPositionOfBoy, leftPositionOfPackage <= rightPositionOfBoy
+    );
+
+    if (bottomPositionOfPackage <= 120
+        &&
+        leftPositionOfPackage >= leftPositionOfBoy
+        &&
+        leftPositionOfPackage <= rightPositionOfBoy) {
+        console.log('Same positnio')
+    }
 };
