@@ -10,11 +10,8 @@ Boy.prototype.init = function () {
     $('#game').append(boyElement);
     this.handle = boyElement[0];
     this.handle.style.left = '50%';
-    this.handle.style.bottom = '0%';
-};
+    this.handle.style.bottom = '0%';};
 
-
-// Unikanie przeszkody (kucanie)
 Boy.prototype.moveleft = function () {
     var acctualPositionX = parseInt(this.handle.style.left.replace('%', ''));
     var newPosition = acctualPositionX - this.step;
@@ -27,4 +24,4 @@ Boy.prototype.moveright = function () {
     var newPosition = acctualPositionX + this.step;
     if (newPosition < 80)
     this.handle.style.left = newPosition + '%';
-};
+};  

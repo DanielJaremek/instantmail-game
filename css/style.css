@@ -77,7 +77,7 @@
     position: absolute;
     right: 0%;
     bottom: 60%;
-    transition: all 8s linear;
+    transition: right 8s linear, bottom 1s linear;
 }
 
 .package.moveLeft {
@@ -95,7 +95,7 @@
     position: absolute;
     left: 0%;
     bottom: 60%;
-    transition: all 6s linear;
+    transition: left 6s linear, bottom 1s linear;
 }
 
 .package1.moveRight {
@@ -113,7 +113,7 @@
     position: absolute;
     left: 0%;
     bottom: 30%;
-    transition: all 5s linear;
+    transition: left 5s linear, bottom 1s linear;    
 }
 
 .package2.moveLeft, .package2.moveRight {
@@ -131,7 +131,7 @@
     position: absolute;
     right: 0%;
     bottom: 30%;
-    transition: all 3.5s linear;
+    transition: right 3.5s linear, bottom 1s linear;    
 }
 
 .package3.moveLeft {

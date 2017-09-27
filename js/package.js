@@ -41,6 +41,11 @@ Package.prototype.init = function () {
         self.moveDown();
     }, speed);
 
+    setTimeout(function(){
+        self.handle.remove();
+    }, speed + 50 + 1000)
+
+    this.intervalId = setInterval(this.checkCollision, 100);    
 };
 
 
@@ -54,4 +59,8 @@ Package.prototype.moveRight = function () {
 
 Package.prototype.moveDown = function () {
     this.handle.addClass('moveDown');
+};
+
+Package.prototype.checkCollision = function () {
+
 };
