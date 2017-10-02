@@ -154,4 +154,9 @@
 .white{
     background-color: white;
 }
-
+.timer{
+    background-color: red;
+    text-decoration-color: black;
+    font-size: large;
+    color: black;
+}
