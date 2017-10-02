@@ -17,8 +17,8 @@ window.addEventListener('keydown', function (event) {
 });
 
 
-packagesInterval();
-// setInterval(packagesInterval, 3300);
+// packagesInterval();
+setInterval(packagesInterval, 3300);
 
 function packagesInterval() {
     var pack = new Package();
